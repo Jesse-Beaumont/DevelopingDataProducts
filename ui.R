@@ -12,6 +12,8 @@ shinyUI(
   # Application title
   titlePanel("2014 US Utilization of Emergency Rooms, Readmits, and Ambulances"),
 
+  hr(),
+
   fluidRow(
 
      column(width=4,
@@ -45,6 +47,17 @@ shinyUI(
                         max = max(df_states$AMB_RATE),
                         value = min(df_states$AMB_RATE), step = 0.01)
      )
-  )
+  ),
+
+  hr(),
+
+  h4("How to use this Application:"),
+
+  p("   An individual US State map is displayed for ER Visits, Readmissions, and Ambulance uses. For each map, the state boundaries are shaded proportional to their individual measure. "),
+
+  p("   Adjust the slider for each measure to change the lower threshold value displayed in the relative map.")
+
 ))
+
+
 

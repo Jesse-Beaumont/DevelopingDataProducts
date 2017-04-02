@@ -1,12 +1,7 @@
 #
-# This is the server logic of a Shiny web application. You can run the
-# application by clicking 'Run App' above.
+#  Shiny application renders a choropleth of US States
+#  allowing comparison of ER visits, Readmits, and Ambulance Use.
 #
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 library(plotly)
 
